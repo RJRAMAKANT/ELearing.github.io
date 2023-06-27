@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+   
+    <title>ACADEMIA </title>
+   <style>
+
+body{
+    background-image: url("../images/girl2nt.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat:no-repeat; 
+}
+header{
+    height: 715px;
+    background-color: rgb(0, 0, 0,0.2);
+}
+section{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    background-color: rgb(207, 205, 205);
+    height: 90%;
+}
+.header-first{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+}
+#clock{
+    display: flex;
+}
+.webname{
+    font-weight: bold;
+    font-size: arial;
+    font-size: 35px;
+    color: white;
+}
+.webname:hover{
+    color: rgb(0, 128, 117);
+}
+.webname+p{
+    color: white;
+    font-weight: bold;
+}
+.header-sticker{
+    font-size: 40px;
+    color: white;
+}
+.sticker-sub{
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.web-sticker span{
+    color: rgb(1, 94, 86);
+    padding: 10px;
+    font-size: 15px;
+    background-color:rgb(121, 170, 183);
+    border-radius: 60%;
+}
+.navigation{
+    display: flex;
+    width: 88%;
+    justify-content: space-between;
+   background-color:rgba(255,255,255,0.1);
+   height: 60px;
+   margin-left: 6%;
+   margin-top: -20px;
+}
+.navigation nav{
+    padding-top: 10px;
+}
+.navigation span{
+    padding-left: 25px;
+    justify-content: center;
+    font-weight: bold;
+    font-family: aria;
+    color: white;
+    font-size: 20px;
+}
+.navigation span:hover{
+    color: rgb(0, 128, 117); ;
+}
+
+.certificate{
+   padding-top: 12px;
+   background-color: rgb(0, 128, 117);
+   width: 300px;
+}
+.certificate span{
+  padding-left: 90px;
+}
+.certificate span:hover{
+    color: white;
+}
+.wta{
+    padding-top: 10%;
+    padding-left: 6%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: aria;
+}
+.BOE{
+    padding-left: 6%;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: arial;
+}
+.ffw{
+    padding-left: 6%;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+}
+.header-button{
+    padding-left: 6%;
+    padding-top: 2%;   
+}
+.header-button span button{
+    height: 50px;
+    border-radius: 10px;
+    width: 200px;
+}
+#b1 button{
+    color: white;
+    background-color:rgb(0, 128, 117) ;
+    border-style: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+#b2 button{
+    color:rgb(0, 128, 117) ;
+    background-color:white;
+    border-style: none;
+    font-weight: bold;
+}
+.section-row1{
+    color: rgb(0, 128, 117);
+    padding-top:10%;
+    padding-left: 5%;
+    font-weight: bold;
+    font-size: 15px;
+}
+.section-row2{
+    color: black(0, 128, 117);
+    padding-top:2%;
+    padding-left: 5%;
+    font-weight: bold;
+    font-size: 40px;
+}
+.section-row3{
+    display: flex;
+    width: 85%;
+    background-color: rgb(215, 210, 210);
+    margin-left: 5%;
+    margin-top: 3%;
+    height: 20%;
+}
+.section-row3:hover {
+    background-color:rgb(3, 203, 186)  ;
+    color: white;
+
+}
+.section-row3 div{
+    margin-top: 2%;
+    padding-left: 1%;
+    font-size: 15px;
+}
+.online-course{
+    padding-bottom: 1%;
+}
+.online-course h5 {
+    font-weight: bold;  
+}
+h6{
+    color:gray;
+}
+h6:hover{
+    color: white;
+}
+main{
+    background-color: white;
+  
+    
+}
+.our-courses{
+    text-align: center;
+    color:rgb(0, 128, 117)  ;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 8%;
+}
+.our-courses-down{
+    text-align: center;
+    color:black(0, 128, 117)  ;
+    font-weight: bold;
+    font-size: 55px; 
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 20px;
+    
+   
+}
+.card{
+    margin: 15px;
+    width: 400px;
+    border-style: none;
+    background-color: rgb(244, 248, 248);
+}
+.card-image img{
+    background-color: rgb(0, 128, 117) ;
+    border-radius: 50%;
+}
+.card-image{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+.card-head{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 50px;
+}
+.sticker{
+    
+    text-align: center;
+    margin-right: 15%;
+}
+.sticker span{
+    color: rgb(0, 128, 117);
+   
+}
+.card-review {
+    text-align: center;
+    margin-right: 15%;
+    margin-top: 2%;
+}
+.card-review img{
+    border-radius: 50%;
+}
+.card-name{
+    font-weight: bold;
+    color: gray;
+    padding-left: 1%;
+}
+.card-lecture{
+    text-align: center;
+    margin-right: 15%;
+    color:rgb(0, 128, 117) ;
+    font-weight: bold;
+}
+.card-fee {
+    text-align: center;
+    font-weight: bold;
+    color:rgb(0, 128, 117)  ;
+    background-color: rgb(248, 246, 246);
+    margin-top: 10%;
+    height: 40px;
+    width: 80%;
+    margin-left: 10%;
+}
+.card-fee div{
+    margin-top: 2%;
+}
+.card-botton {
+    margin: 5%;
+    border-color:1px solid rgb(5, 208, 191) ;   
+}
+#b3 button{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color:rgb(0, 128, 117) ;
+    font-weight: bold;
+    border: 1px solid rgb(0, 128, 117);
+}
+#b3 button:hover{
+    background-color: rgb(0, 128, 117) ;
+    color: white;
+}
+.main-courses{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 20px;
+    color: rgb(0, 128, 117);
+}
+.browse{
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    padding: 10px;
+    font-family: arial;
+}
+.body-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+.card1{
+   margin-left: 3px;
+   border-radius: 5px;
+   padding: 10px;
+   background-color:rgb(255, 255, 255) ;  
+   height: 250px;
+   width: 250px;
+}
+.card1 img{
+    padding-top: 10px;
+}
+.card1:hover{
+    background-color:rgb(0, 128, 117);
+    color: white;
+}
+
+.course-name{
+    padding-top: 30%;
+    font-weight: bold;
+}
+.course25{
+    margin: 10%;
+    background-color: rgb(255, 253, 253);
+    width: 50%;
+    margin-left: 25%;
+    font-weight: bold;
+    color:rgb(0, 128, 117) ;
+    border-radius: 5px;
+}
+main{
+    background-color: rgb(233, 232, 232);
+}
+.body-card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+.TESTIMONIAL{
+    color:rgb(0, 128, 117)  ;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+}
+.oss{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 2%;
+}
+.container11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-card11{
+    width: 400px;
+    background-color: white;
+   margin: 20px;
+   height: 280px;
+}
+.container-card11:hover{
+    background-color:rgb(0, 128, 117) ;
+    color: white;
+}
+.container-card11:hover #mm{
+    background-color:rgb(0, 128, 117) ;
+    color: white;
+}
+.card11{
+    display: flex;
+    padding: 40px;
+}
+.card11 img{
+    border-radius: 50%;
+}
+#RogerScott{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+#mm{
+    margin-top: 2%;
+    color:rgb(0, 128, 117) ;
+    font-weight: bold;
+    margin-left: 10px ;
+}
+#paragraph{
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 10%;
+   
+}
+#oblog{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:rgb(0, 128, 117) ;
+    font-weight: bold;
+    margin-top: 10%;
+}
+#RFB{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: arial;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-main{
+    display: flex;
+    justify-content: space-around;
+    margin: 2px;
+    width: 90%;
+    margin-left: 5%;
+   align-items: center;
+    
+}
+.cards{
+    background-color: aliceblue;
+    margin: 1%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px gray;
+    
+   
+    
+}
+.clogo span{
+    color:rgb(0, 128, 117) ;
+    margin: 5px;
+    font-weight: bold;
+}
+#admin{
+    color: gray;
+}
+.build{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+.asmall{
+    color: gray;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 7px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+.ourpricing{
+    color:rgb(0, 128, 117)  ;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+}
+.pricing{
+    color:rgb(0, 0, 0)  ;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 30px;
+}
+.cardpricing{
+    display: flex;
+    justify-content: space-around;
+    margin: 2px;
+    width: 90%;
+    margin-left: 5%;
+   align-items: center;
+   
+
+}
+.cprice{
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 2%;
+    box-shadow: 2px 2px gray;
+}
+.basic{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.dollar{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.far{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+    color: gray;
+}
+.getstarted button{
+    border: none;
+    width: 200px ;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 70px;
+    font-weight: bold;
+  
+}
+.getstarted button:hover{
+    color:white;
+    background-color: rgb(0, 128, 117);
+}
+a{
+    text-decoration: none;
+}
+.newsletter{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(0, 128, 117) ;
+    margin-top: 70px;
+    height: 200px;
+}
+.stay-tune{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: ceneter;
+    margin-top: 80px;
+}
+.ffaway{
+    color: rgb(203, 200, 200);
+    font-weight: bold;
+}
+.maiil{
+    margin-top: 80px;
+    margin-right: 10px;
+}
+.maiil span{
+    color: white;
+    font-size: 25px;
+}
+.maiil input{
+    border: none;
+    width: 350px;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+footer{
+    display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left:70px;
+}
+.hd1{
+    font-weight: bold;
+}
+.flogo{
+    font-size: 20px;
+    color:rgb(0, 128, 117) ; ;
+}
+.arrow{
+    font-weight: bold;
+    color: rgb(106, 106, 106);
+}
+.rpost{
+    display: flex;
+    align-items: center;
+}
+.footer3{
+    margin-left: -15px;
+}
+.footer4{
+    margin-left: -15px;
+}
+.footer5{
+    margin-left: -15px;
+}
+.copywright{
+    height: 150px;
+    background-color: rgb(227, 225, 225); 
+    position: relative;
+}
+.copy1{
+    margin-top: 20px;
+    position:absolute;
+    top:50px ;
+    right: 500px;
+}
+
+@media(max-width:998px){
+    html{
+        font-size: 45%;
+    }
+    
+}
+
+@media(max-width:768px)
+{
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-size: cover;
+    }
+    html{
+        font-size: 55%;
+    }
+    .webname{
+        font-size: 20px;
+       
+    }
+    .header-sticker{
+        font-size: 18px;   
+    }
+    .sticker-sub{  
+        font-weight: bold;   
+    }
+    .web-sticker span{  
+        padding: 2px;
+        font-size: 15px;  
+    }
+    #clock{
+        display:none;
+    }
+    .navigation{
+       height: 60px;
+       margin-top: -20px;
+    }
+    .navigation nav{
+        padding-top: 0px;
+    }
+    .navigation span{
+        padding-left: 20px;
+      
+        font-size: 14px;
+    }
+
+    .header-button span button{
+        height: 50px;
+        border-radius: 10px;
+        width: 340px;
+        margin-top: 10px;
+    }
+    .secimg{
+        display: none;
+    }
+    section{
+         display: block;
+         background-color: rgb(207, 205, 205);
+        height: 100%;
+        
+    }
+    .our-courses-down{
+        font-size: 25px;
+    }
+    .card-container{
+        display: block;   
+    }
+    .card{
+        margin-left: -60px;
+        display: block;
+        width: 365px;
+    }
+    .body-card{
+        display: block;
+      
+        margin-top: 50px;
+        
+    }
+    .card1{
+        margin-left: 3px;
+        border-radius: 5px;
+        padding: 10px;
+      
+        height: 250px;
+        width: 350px;
+        margin-bottom: 8px;
+     }
+     .body-card2{
+        display: block;
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 5px;
+    }
+    .course25{
+         font-size: 15px;
+    }
+
+    .course-name{
+        font-size: 20px;
+        margin-top: -100px;
+    }
+    #paragraph{
+        font-size: 15px;
+    }
+    .container11{
+        display: block;
+        
+    }
+    .container-card11{
+        width: 350px;
+    }
+    .cardpricing{
+        display: block;
+    }
+    .cprice{
+        height: 300px;
+        width: 350px;
+    }
+    .basic{
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .far{
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 25px;
+        color: gray;
+    }
+    .getstarted button{
+      margin-top: -0.4px;
+      font-size: 15px;
+    }
+    .newsletter{
+        display: block;
+    }
+    .maiil{
+        margin-top: -1px;
+    }
+    footer{
+        display: block;
+    }
+    .footer1 div{
+        font-size: 10px;
+        margin-left: -12px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .hd1{
+        font-size: 18px;
+    }
+    .arrow{
+        font-size: 15px;
+    }
+    .ci{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .haq{
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(100, 98, 98);
+    }
+
+    .copy1{
+        
+        text-align: center;
+        right: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(111, 110, 110);
+    }
+    #pricing{
+        font-size: 25px;
+    }
+    #oblog{
+        font-size: 25px;
+    }
+    .online-course-sub{
+        font-size: 100px;
+    }
+    .online-course{
+        font-size: 55px;
+    }
+}
+
+
+
+
+
+   </style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <header id="home">
+        <div class="header-first">
+            <div>
+                <div class="webname">ACADEMIA</div>
+                <p>ONLINE EDUCATION & LEARNING</p>
+
+            </div>
+            <div id="clock">
+                <div class="header-sticker"><span class="bi bi-clock-fill"></span></div>
+                <div class="sticker-sub">
+                    <div>Monday - Friday</div>
+                    <div>8:00AM-8:00PM</div>
+                </div>
+
+            </div>
+            <div id="clock">
+                <div class="header-sticker"><span class="bi bi-telephone-fill"></span></div>
+                <div class="sticker-sub">
+                    <div>Call Us</div>
+                    <div>+91 7751975616</div>
+                </div>
+
+
+            </div>
+            <div class="web-sticker" >
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-youtube"></span>
+                
+            </div>
+
+        </div>
+
+        <div class="navigation">
+            <div>
+                <nav>
+                    <a href="#home"><span>Home</span></a>
+                    <a href="#courses"> <span>All Courses</span></a>
+                        <a href="#aboutus"> <span>About</span></a>
+                            <a href="#team"> <span>Team</span></a>
+                                <a href="#pricing"> <span>Pricing</span></a>
+                                    <a href="#oblog"><span>Journal</span></a>
+                                        <a href=""> <span>Contact</span></a>
+                </nav>
+            </div>
+            <div class="certificate"><span> Certificate</span></div>
+            
+        </div>
+        <div class="wta">WELCOME TO ACADEMIA </div>
+        <div class="BOE">Best Online Education<br>Expertise</div>
+        <div class="ffw">Far far away, behind the word mountains, <br>far from the countries Vokalia<br>and Consonantia, there live the blind texts.</div>
+        <div class="header-button">
+           
+           <span id="b1"> <button>GET STARTED NOW!<SPAN class="BI bi-arrow-bar-right"></SPAN></button></span>
+            
+            <span id="b2"><button>VIEW COURSE <SPAN class="BI bi-arrow-bar-right"></SPAN></button></span>
+          
+        </div>
+    </header>
+    <section>
+
+        <div class="secimg">
+            
+           <img src="../images/girllapnt11.jpg" height="100%"width=100%>
+           
+        </div>
+        <div>
+            <div class="section-row1" id="aboutus"> LEARN ANYTHING</div>
+            <div class="section-row2">Benefits About Online <br>Learning Expertise</div>
+
+            <div class="section-row3">
+                <div>
+                    <div class="section-image"><img src="../images/online course.png"height="80px" width="80px"></div>
+
+                </div>
+                <div>
+                    <div class="online-course"><h5>Online Courses </h5></div>
+                    <div class="online-course-sub"><h6>Far far away, behind the word mountains, far from the countries  Vokalia and Consonantia, there live the blind texts</h6></div>
+
+                </div>
+
+            </div>
+            <div class="section-row3">
+                <div>
+                    <div class="section-image"><img src="../images/online certificate.png"height="80px" width="80px"></div>
+
+                </div>
+                <div>
+                    <div class="online-course"><h5> Earn A Certificates </h5></div>
+                    <div class="online-course-sub"><h6>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </h6></div>
+
+                </div>
+
+            </div>
+            <div class="section-row3">
+                <div>
+                    <div class="section-image"><img src="../images/online sir.png"height="80px" width="80px"></div>
+
+                </div>
+                <div>
+                    <div class="online-course"><h5> Learn with Expert</h5></div>
+                    <div class="online-course-sub"><h6>Far far away, behind the word mountains, far from the countries  Vokalia and Consonantia, there live the blind texts</h6> </div>
+
+                </div>
+
+            </div>
+            
+
+
+        </div>
+        
+    </section>
+    <main>
+        <div class="secttion-down">
+            <img src="../images/sectiondown.png" width="100%">
+    
+        </div>
+        <div class="our-courses">OUR COURSES</div>
+        <div class="our-courses-down">Explore Our Popular Online Courses</div>
+
+        <div class="card-container">
+            <div class="card">
+           
+            <div class="card-image">
+                <div><img src="../images/coding.png" height="60px" width="60px"></div>
+                <div class="card-head">HTML, CSS, and <br> Javascript for Web <br>Developers</div>
+            </div>
+
+            <div class="sticker"><span class="bi bi-star-fill"></span> 
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span >(5.0)</span></div>
+            <div class="card-review"><span><img src="../images/c1.png" height="32px" width="32px"></span>
+            <span class="card-name">by John Smith</span> 
+            </div>
+            <div class="card-lecture">50 lectures (190 hrs) </div>
+            <div class="card-fee"><div>$100 All Course / $15 per month</div></div>
+            <div class="card-botton"><span id="b3"><button>ENROLL NOW</button></span></div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <div><img src="../images/programmer.png" height="60px" width="60px"></div>
+                    <div class="card-head">
+                        Basic Fundamentals for Software Engineering</div>
+                </div>
+    
+                <div class="sticker"><span class="bi bi-star-fill"></span> 
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span >(5.0)</span></div>
+                <div class="card-review"><span><img src="../images/c1.png" height="32px" width="32px"></span>
+                <span class="card-name">by John Smith</span> 
+                </div>
+                <div class="card-lecture">50 lectures (190 hrs) </div>
+                <div class="card-fee"><div>$100 All Course / $15 per month</div></div>
+                <div class="card-botton"><span id="b3"><button>ENROLL NOW</button></span></div>
+    
+
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <div><img src="../images/photoshop.png" height="60px" width="60px"></div>
+                    <div class="card-head">Enhancing Adobe Photoshop CC 2020 Skills</div>
+                </div>
+    
+                <div class="sticker"><span class="bi bi-star-fill"></span> 
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span >(5.0)</span></div>
+                <div class="card-review"><span><img src="../images/c1.png" height="32px" width="32px"></span>
+                <span class="card-name">by John Smith</span> 
+                </div>
+                <div class="card-lecture">50 lectures (190 hrs) </div>
+                <div class="card-fee"><div>$100 All Course / $15 per month</div></div>
+                <div class="card-botton"><span id="b3"><button>ENROLL NOW</button></span></div>
+    
+
+            </div>
+
+        </div>
+
+
+        <div class="main-courses"> COURSES</div>
+        <div class="browse" id="courses">Browse Our Online Courses</div>
+        
+
+        <div class="body-card">
+
+            
+                <div class="card1">
+                <div><img src="../images/user-experience.png" width="70px" height="70px"></div>
+                <div class="course-name">UI/UX DESIGN COURSES</div>
+                <div class="course25">25 courses</div>
+                </div>
+               <div class="card1">
+                <div><img src="../images/art-studies.png" width="70px" height="70px"></div>
+                <div class="course-name">ART & DESIGN</div>
+                <div class="course25">25 courses</div>
+            </div>
+            <div class="card1">
+                <div><img src="../images/programmer.png" width="70px" height="70px"></div>
+                <div class="course-name">COMPUTER SCIENCE</div>
+                <div class="course25">25 courses</div>
+            </div>
+            <div class="card1">
+                <div><img src="../images/hourglass.png" width="70px" height="70px"></div>
+                <div class="course-name">HISTORY & ARCHELOGIC</div>
+                <div class="course25">25 courses</div>
+            </div>
+            <div class="card1">
+                <div><img src="../images/software-application.png" width="70px" height="70px"></div>
+                <div class="course-name">SOFTWARE ENGINEER</div>
+                <div class="course25">25 courses</div>
+            </div>
+            <div class="card1">
+                <div><img src="../images/laptop.png" width="70px" height="70px"></div>
+                <div class="course-name">INFORMATION <BR> SOFTWARE</div>
+                <div class="course25">25 courses</div>
+            </div>
+        </div>
+        <div class="body-card2">
+            <div class="card1">
+            <div><img src="../images/graphic-designer.png" width="70px" height="70px"></div>
+            <div class="course-name">GRAPHIC DESIGNING</div>
+            <div class="course25">25 courses</div>
+            </div>
+           <div class="card1">
+            <div><img src="../images/digital-marketing.png" width="70px" height="70px"></div>
+            <div class="course-name">DIGITAL MARKETING</div>
+            <div class="course25">25 courses</div>
+        </div>
+        <div class="card1">
+            <div><img src="../images/dumbbell.png" width="70px" height="70px"></div>
+            <div class="course-name">HEALTH & FITNESS</div>
+            <div class="course25">25 courses</div>
+        </div>
+        <div class="card1">
+            <div><img src="../images/music-note.png" width="70px" height="70px"></div>
+            <div class="course-name">MUSIC</div>
+            <div class="course25">25 courses</div>
+
+
+        </div>
+        <div class="card1">
+            <div><img src="../images/web.png" width="70px" height="70px"></div>
+            <div class="course-name">WEB MANAGEMENT</div>
+            <div class="course25">25 courses</div>
+
+
+        </div>
+        <div class="card1">
+            <div><img src="../images/administrative.png" width="70px" height="70px"></div>
+            <div class="course-name">BUSINESS ADMINISTRATIVE</div>
+            <div class="course25">25 courses</div>
+
+
+        </div>
+
+    </div>
+    <div class="TESTIMONIAL">TESTIMONIAL</div>
+    <div class="oss" id="team">Our Successful Students</div>
+
+    <div class="container11">
+        <div class="container-card11">
+            <div class="card11">
+                <div> <img src="../images/c3.png" height="80px" width="80px"></div>
+                <div>
+                    <div id="RogerScott">ROGER SCOTT</div>
+                    <div id="mm">MARKETING MANAGER</div>
+                </div>
+                
+
+            </div>
+            <div>
+                <div id="paragraph">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+
+            </div>
+
+        </div>
+        <div class="container-card11">
+            <div class="card11">
+                <div> <img src="../images/c3.png" height="80px" width="80px"></div>
+                <div>
+                    <div id="RogerScott">ROGER SCOTT</div>
+                    <div id="mm">MARKETING MANAGER</div>
+                </div>
+                
+
+            </div>
+            <div>
+                <div  id="paragraph">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+
+            </div>
+
+        </div>
+        <div class="container-card11">
+            <div class="card11">
+                <div> <img src="../images/c3.png" height="80px" width="80px"></div>
+                <div>
+                    <div id="RogerScott">ROGER SCOTT</div>
+                    <div id="mm">MARKETING MANAGER</div>
+                </div>
+                
+
+            </div>
+            <div>
+                <div  id="paragraph">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="oblog" >OUR BLOG</div>
+    <div id="RFB">Recent From Blog  </div>
+
+
+    <div class="card-main">
+        <div class="cards">
+            <div class="cardimage11"><img src="../images/cards1.png" width="100%"></div>
+            <div class="clogo">
+                <span class="bi bi-person "><span id="admin">ADMIN<span></span>
+                <span class="bi bi-calendar"><span id="admin">07-JUN-2023</span></span>
+                <span class="bi bi-messenger">COMMENTS</span>
+               
+                
+            </div>
+            <div class="build">Build your Dream Software & Engineering Career</div>
+            <div class="asmall">A small river named Duden flows by their place <br> and supplies it with the necessary regelialia.</div>
+
+        </div>
+        <div class="cards">
+            <div class="cardimage11"><img src="../images/cards2.png" width="100%" ></div>
+            <div class="clogo">
+                <span class="bi bi-person "><span id="admin">ADMIN<span></span>
+                <span class="bi bi-calendar"><span id="admin">07-JUN-2023</span></span>
+                <span class="bi bi-messenger">COMMENTS</span>
+                
+            </div>
+            <div class="build">Build your Dream Software & Engineering Career</div>
+            <div class="asmall">A small river named Duden flows by their place <br> and supplies it with the necessary regelialia.</div>
+
+        </div>
+        <div class="cards">
+            <div class="cardimage11"><img src="../images/cards3.png" width="100%" ></div>
+            <div class="clogo">
+                <span class="bi bi-person "><span id="admin">ADMIN<span></span>
+                <span class="bi bi-calendar"><span id="admin">07-JUN-2023</span></span>
+                <span class="bi bi-messenger">COMMENTS</span>
+                
+            </div>
+            <div class="build">Build your Dream Software & Engineering Career</div>
+            <div class="asmall">A small river named Duden flows by their place <br> and supplies it with the necessary regelialia.</div>
+
+        </div>
+    </div>
+       
+    <div class="ourpricing" id="pricing">OUR PRICING</div>
+    <div class="pricing">Pricing & Packages</div>
+    <div class="cardpricing">
+        <div class="cprice">
+            <div class="basic">Basic Plan</div>
+            <div class="dollar">49K</div>
+            <div class="far">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</div>
+            <div class="getstarted"><button>GET STARTED</button></div>
+        </div>
+        <div class="cprice">
+            <div class="basic">BEGINER Plan</div>
+            <div class="dollar">79K</div>
+            <div class="far">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</div>
+            <div class="getstarted"><button>GET STARTED</button></div>
+
+        </div>
+        <div class="cprice">
+            <div class="basic">PREMIUM Plan</div>
+            <div class="dollar">109K</div>
+            <div class="far">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</div>
+            <div class="getstarted"><button>GET STARTED</button></div>
+
+        </div>
+        <div class="cprice">
+            <div class="basic">ULTIMATE Plan</div>
+            <div class="dollar">149K</div>
+            <div class="far">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</div>
+            <div class="getstarted"><button>GET STARTED</button></div>
+
+        </div>
+    </div>
+    <div class="newsletter">
+        <div class="nl">
+            <div class="stay-tune">Newsletter - Stay tune and get the latest update</div>
+            <div class="ffaway">Far far away, behind the word mountains</div>
+
+        </div>
+        <div class="maiil">
+            <div><input type="mail" value="Enter your Mail"><span class="bi bi-telegram"></span></div>
+
+        </div>
+
+    </div>
+    
+    <footer>
+        <div class="footer1">
+            <div class="hd1"><h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">ACADEMIA</h1></div>
+            <div class="oeal" style="color: rgb(0, 128, 117); font-weight: bold; font-size: 14px; margin-top: -7px;">online education and learning</div>
+            <div class="mt-3"><p style="color: gray; margin-top: 3px; font-weight: bold;">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p></div>
+            <div class="flogo mt-5">
+                <span class="bi bi-twitter m-3"></span>
+                <span class="bi bi-instagram m-3"></span>
+                <span class="bi bi-facebook m-3"></span>
+            </div>
+        </div>
+
+        <div class="footer2">
+            <div class="hd1">Explore</div>
+            <div class="arrow mt-3"><span class="bi bi-arrow-right">About us</span></div>
+            <div class="arrow mt-3"><span class="bi bi-arrow-right">Service</span></div>
+            <div class="arrow mt-3"><span class="bi bi-arrow-right">Courses</span></div>
+            <div class="arrow mt-3"><span class="bi bi-arrow-right">Blog</span></div>
+            <div class="arrow mt-3"><span class="bi bi-arrow-right">Contact us</span></div>
+
+        </div>
+        <div class="footer3">
+            <div class="hd1">QuickLinks</div>
+            <div class="arrow mt-3"><span class="bi bi-arrow-right">Contact us</span></div>
+            <div class="arrow mt-3"><span class="bi bi-arrow-right">Pricing</span></div>
+            <div class="arrow mt-3"><span class="bi bi-arrow-right">Terms and Conditions</span></div>
+            <div class="arrow mt-3"><span class="bi bi-arrow-right">Privacy</span></div>
+            <div class="arrow mt-3"><span class="bi bi-arrow-right">Feedback</span></div>
+
+
+        </div>
+        <div class="footer4">
+            <div class="hd1">Recent Post</div>
+             <div class="rpost mt-3" >
+                <div>
+                    <img src="../images/cards1.png"width="60px" height="60px" style="border-radius: 15px;">
+
+                </div>
+                <div>
+                    <div>
+                        <span class=" bi bi-calendar-date-fill m-lg-3" style="color:rgb(0, 128, 117) ;font-weight: bold; font-size: 12px;">&nbsp;jun-8-2023</span>
+                        <span class="bi bi-person m-lg-0.1" style="color:rgb(0, 128, 117) ;font-weight: bold;font-size: 12px;">Admin</span>
+                    </div>
+                    <div class="ci">Creativity and Inspiration</div>
+
+                </div>
+             </div>
+             <div class="rpost mt-3" >
+                <div>
+                    <img src="../images/cards2.png"width="60px" height="60px" style="border-radius: 15px;">
+
+                </div>
+                <div>
+                    <div>
+                        <span class=" bi bi-calendar-date-fill m-lg-3" style="color:rgb(0, 128, 117) ;font-weight: bold; font-size: 12px;">&nbsp;jun-8-2023</span>
+                        <span class="bi bi-person m-lg-0.1" style="color:rgb(0, 128, 117) ;font-weight: bold;font-size: 12px;">Admin</span>
+                    </div>
+                    <div class="ci">Creativity and Inspiration</div>
+
+                </div>
+             </div>
+             <div class="rpost mt-3" >
+                <div>
+                    <img src="../images/cards3.png"width="60px" height="60px" style="border-radius: 15px;">
+
+                </div>
+                <div>
+                    <div>
+                        <span class=" bi bi-calendar-date-fill m-lg-3" style="color:rgb(0, 128, 117) ;font-weight: bold; font-size: 12px;">&nbsp;jun-8-2023</span>
+                        <span class="bi bi-person m-lg-0.1" style="color:rgb(0, 128, 117) ;font-weight: bold;font-size: 12px;">Admin</span>
+                    </div>
+                    <div class="ci">Creativity and Inspiration</div>
+
+                </div>
+             </div>
+
+        </div>
+        <div class="footer5">
+            <div class="hd1">Have a Question</div>
+            <div class="haq mt-4"><span class=" bi bi-map-fill m-md-2"  style="color:rgb(0, 128, 117) ;"></span>Balasore,Bhubaneswar,Odisha</div>
+            <div class="haq mt-4"><span class=" bi bi-phone-fill m-md-2"  style="color:rgb(0, 128, 117) ;"></span>+91 7751975616</div>
+            <div class="haq mt-4"><span class=" bi bi-telegram m-md-2"  style="color:rgb(0, 128, 117) ;"></span>ramakantagahan1999@gmail.com</div>
+
+        </div>
+
+    </footer>
+    <div class="copywright">
+        <div class="copy1">Copyright ©2023 All rights reserved | This template is made   by @RJ RAMAKANT</div>
+
+    </div>
+    
+
+    </main>
+    
+    
+    
+</body>
+</html>
